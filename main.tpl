@@ -12,10 +12,8 @@
 <link rel="stylesheet" type="text/css" href="{$THEME}/css/general.css" />
 <link rel="stylesheet" type="text/css" href="{$THEME}/css/slideshow.css" />
 <link rel="stylesheet" type="text/css" href="{$THEME}/css/main.css" />
-<link rel="stylesheet" href="{$THEME}/css/lightbox.css" type="text/css" media="screen" /> 
-<script src="{$THEME}/js/lightbox.js" type="text/javascript"></script> 
-<script src="{$THEME}/js/prototype.js" type="text/javascript"></script>
-<script src="{$THEME}/js/scriptaculous.js?load=effects" type="text/javascript"></script>
+<!--<script src="{$THEME}/js/prototype.js" type="text/javascript"></script>
+<script src="{$THEME}/js/scriptaculous.js?load=effects" type="text/javascript"></script>-->
 <script type="text/javascript" src="{$THEME}/js/jquery.js"></script>
 <script type="text/javascript" src="{$THEME}/js/jquery.hoverIntent.js"></script>
 <script type="text/javascript" src="{$THEME}/js/superfish.js"></script>
