@@ -3,10 +3,9 @@
 #slideshow {
 	z-index: 1;
 	margin-top: 15px;
-	margin-bottom: -50px;
+	margin-bottom: 0px;
 	margin-left: -5px;
-	height: 310px;
-	background: url(../images/slider.png) left no-repeat;
+	height: 310px;	
 }
 
 #slideshow img {

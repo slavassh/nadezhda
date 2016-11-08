@@ -68,9 +68,9 @@
     <tr>
       <td>
 <a href="main"><div id="logo"></div></a>
-<a href="http://children.chelddom6.ru"><div id="detstran"></div></a>
-<a href="http://chelddom6.ru/news"><div id="news"></div></a>
-<a href="http://chelddom6.ru/feedback"><div id="interpriem"></div></a>
+<a href="http://children.chelnadezhda.edu.ru"><div id="detstran"></div></a>
+<a href="/news"><div id="news"></div></a>
+<a href="/feedback"><div id="interpriem"></div></a>
       </td>
     </tr>
   </table>
@@ -85,11 +85,11 @@
    </div>
    </td>
   </tr>
-</td>
-  </tr>
 </table>
   </div>
-    <!-- BEGIN SLIDESHOW -->
+
+  {if $page_type == 'main'}
+    <!-- BEGIN SLIDESHOW -->    
     <div id="slideshow">
       <ul id="slides">
         <li><img src="{$THEME}/images/004.jpg" alt="" width="1000" height="330" style="-moz-box-shadow: 0 2px 5px rgba(0,0,0,0.5); -webkit-box-shadow: 0 2px 5px rgba(0,0,0,0.5); box-shadow: 0 2px 5px rgba(0,0,0,0.5); border-bottom-right-radius:13px; border-bottom-left-radius:13px" /></li>
@@ -104,17 +104,19 @@
       <div id="slideshow_violator">
         <div id="slide_navigation"></div>
       </div>
-    </div>
-    <!-- END SLIDESHOW -->  
-    <a href="http://www.usynovite.ru/db"><div id="center3"></div></a>
-    <a href="http://chelddom6.ru/vam-usynoviteli"><div id="center2"></div></a>
-    <a href="http://chelddom6.ru/letocompany"><div id="center1"></div></a>
+    </div>    
+    <!-- END SLIDESHOW -->
+    {/if}
+
+    <a href="http://www.usynovite.ru/db"><div class="center-link" id="center3"></div></a>
+    <a href="/vam-usynoviteli"><div class="center-link" id="center2"></div></a>
+    <a href="/letocompany"><div class="center-link" id="center1"></div></a>
   <div id="centerfon" align="center"></div>
   <div id="main">
   
-  {if $page_type == 'main'}
+  
    
-   {/if}
+   
     
     <!-- BEGIN CONTEINER -->
 {if $CI->uri->segment(1) != 'feedback' && $CI->uri->segment(1) != 'gallery'}

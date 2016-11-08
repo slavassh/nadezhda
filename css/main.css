@@ -114,7 +114,7 @@
 }
 
 #centerfon {
-	margin-top: 80px;
+	margin-top: 25px;
 	margin-bottom: 10px;
 	margin-left: 5px;
 	width: 979px;
@@ -127,56 +127,36 @@
 	box-shadow: 0 0px 7px rgba(0, 0, 0, 0.5);
 }
 
-#center3 {
+.center-link {
 	position: absolute;
-	margin-top: 75px;
-	margin-left: 680px;
+	margin-top: 20px;
 	width: 288px;
 	height: 161px;
+}
+
+#center3 {
+	margin-left: 680px;
 	background: url(../images/center3.png) no-repeat;
 }
 
 #center3:hover {
-	position: absolute;
-	margin-top: 75px;
-	margin-left: 680px;
-	width: 288px;
-	height: 161px;
 	background: url(../images/center3hover.png) no-repeat;
 }
 
 #center2 {
-	position: absolute;
-	margin-top: 75px;
 	margin-left: 350px;
-	width: 288px;
-	height: 161px;
 	background: url(../images/center2.png) no-repeat;
 }
 
 #center2:hover {
-	position: absolute;
-	margin-top: 75px;
-	margin-left: 350px;
-	width: 288px;
-	height: 161px;
 	background: url(../images/center2hover.png) no-repeat;
 }
 
 #center1 {
-	position: absolute;
-	margin-top: 75px;
 	margin-left: 20px;
-	width: 288px;
-	height: 161px;
 	background: url(../images/center1.png) no-repeat;
 }
 
 #center1:hover {
-	position: absolute;
-	margin-top: 75px;
-	margin-left: 20px;
-	width: 288px;
-	height: 161px;
 	background: url(../images/center1hover.png) no-repeat;
 }
