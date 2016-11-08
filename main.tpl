@@ -12,15 +12,11 @@
 <link rel="stylesheet" type="text/css" href="{$THEME}/css/general.css" />
 <link rel="stylesheet" type="text/css" href="{$THEME}/css/slideshow.css" />
 <link rel="stylesheet" type="text/css" href="{$THEME}/css/main.css" />
-<!--<script src="{$THEME}/js/prototype.js" type="text/javascript"></script>
-<script src="{$THEME}/js/scriptaculous.js?load=effects" type="text/javascript"></script>-->
 <script type="text/javascript" src="{$THEME}/js/jquery.js"></script>
 <script type="text/javascript" src="{$THEME}/js/jquery.hoverIntent.js"></script>
 <script type="text/javascript" src="{$THEME}/js/superfish.js"></script>
 <script type="text/javascript" src="{$THEME}/js/jquery.cycle.js"></script>
 <script type="text/javascript" src="{$THEME}/js/jquery.functions.js"></script>
-<script type="text/javascript" src="{$THEME}/js/cufon.js"></script>
-<script type="text/javascript" src="{$THEME}/js/js.js"></script>
 
 <link rel="icon" href="{$THEME}/images/favicon.png" type="image/x-icon" />
 
@@ -65,7 +61,7 @@
   <table width="1000" align="center">
     <tr>
       <td>
-<a href="main"><div id="logo"></div></a>
+<a href="/"><div id="logo"></div></a>
 <a href="http://children.chelnadezhda.edu.ru"><div id="detstran"></div></a>
 <a href="/news"><div id="news"></div></a>
 <a href="/feedback"><div id="interpriem"></div></a>
@@ -82,6 +78,8 @@
     {load_menu('main_menu')}
    </div>
    </td>
+  </tr>
+</td>
   </tr>
 </table>
   </div>
@@ -243,7 +241,7 @@
 <div id="toplinefooter" align="center"></div>
 <!-- BEGIN FOOTER -->
 <div id="footer">
-  <div class="left"><strong>© 2013  Детский дом №6 | Все права защищены | </strong><a href="mailto:ddom6_chel@mail.ru">ddom6_chel@mail.ru</a>
+  <div class="left"><strong>© 2013 - 2016, МБУ Центр "Надежда" | </strong><a href="mailto:ddom6_chel@mail.ru">ddom6_chel@mail.ru</a>
   </div>
   {load_menu('bottom_menu')}
   <div class="sp"></div>

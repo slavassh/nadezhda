@@ -242,7 +242,7 @@ html* {
 }
 
 
-/* BEGINA NAVIGATION */
+/* BEGIN NAVIGATION */
 
 #navigation {
 	position: absolute;
@@ -260,12 +260,17 @@ html* {
 	float: left;
 }
 
+.menu-item {
+	padding-left: 22px;
+}
+
 #navigation ul li a {
 	display: block;
 	margin-left: 10px;
 	padding-top: 10px;
 	color: #ffffff;
 	text-decoration: none;
+	text-transform: uppercase;
 	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
 	font-weight: bold;
 	font-size: 12px;
@@ -779,8 +784,7 @@ form .textbox {
 /* BEGIN FOOTER */
 
 #footer {
-	margin: 0 auto;
-	margin-left: 100px;
+	margin: 0 auto;	
 	padding: 30px 0;
 	width: 990px;
 	color: #11849b;
