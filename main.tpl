@@ -93,7 +93,6 @@
     <div id="slideshow">
       <ul id="slides">
         <li><img src="{$THEME}/images/004.jpg" alt="" width="1000" height="330" style="-moz-box-shadow: 0 2px 5px rgba(0,0,0,0.5); -webkit-box-shadow: 0 2px 5px rgba(0,0,0,0.5); box-shadow: 0 2px 5px rgba(0,0,0,0.5); border-bottom-right-radius:13px; border-bottom-left-radius:13px" /></li>
-        <li><img src="{$THEME}/images/001.jpg" alt="" width="1000" height="330" style="-moz-box-shadow: 0 2px 5px rgba(0,0,0,0.5); -webkit-box-shadow: 0 2px 5px rgba(0,0,0,0.5); box-shadow: 0 2px 5px rgba(0,0,0,0.5);" /></li>
         <li><img src="{$THEME}/images/002.jpg" alt="" width="1000" height="330" style="-moz-box-shadow: 0 2px 5px rgba(0,0,0,0.5); -webkit-box-shadow: 0 2px 5px rgba(0,0,0,0.5); box-shadow: 0 2px 5px rgba(0,0,0,0.5);" /></li>
         <li><img src="{$THEME}/images/003.jpg" alt="" width="1000" height="330" style="-moz-box-shadow: 0 2px 5px rgba(0,0,0,0.5); -webkit-box-shadow: 0 2px 5px rgba(0,0,0,0.5); box-shadow: 0 2px 5px rgba(0,0,0,0.5);" /></li>
         <li><img src="{$THEME}/images/006.jpg" alt="" width="1000" height="330" style="-moz-box-shadow: 0 2px 5px rgba(0,0,0,0.5); -webkit-box-shadow: 0 2px 5px rgba(0,0,0,0.5); box-shadow: 0 2px 5px rgba(0,0,0,0.5);" /></li>

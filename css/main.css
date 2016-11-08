@@ -24,10 +24,11 @@
 
 #logo {
 	position: relative;
-	margin-top: 50px;
-	width: 590px;
-	height: 207px;
-	background: url(images/logo.png) no-repeat;
+	margin-top: 70px;
+	margin-bottom: 20px;
+	width: 540px;
+	height: 166px;
+	background: url(../images/logo-name.png) no-repeat;
 }
 
 #logoright {
