@@ -1,0 +1,84 @@
+#topline {
+	position: relative;
+	width: 100%;
+	background: url(../images/topline.png) top center repeat-x;
+}
+#toplinefooter {
+	position: relative;
+	margin-top: 15px;
+	margin-bottom: -30px;
+	width: 100%;
+	height: 5px;
+	background: url(../images/topline.png) top center repeat-x;
+}
+#artproject {
+	position: relative;
+	margin-top: 25px;
+	margin-left: 895px;
+	width: 265px;
+	height: 34px;
+	background: url(../images/artproject.png) no-repeat;
+}
+
+#logoright {
+	float: right;
+	margin-top: -20px;
+	margin-right: 185px;
+	margin-bottom: -30px;
+}
+.textlogoright {
+	padding-right: 20px;
+	padding-left: 20px;
+	border-top-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	background: $blaze_orange;
+	color: $white;
+	text-decoration: none;
+	font-weight: bold;
+
+	&:hover {
+		background: $color_atlantis_approx;
+	}
+}
+
+#centerfon {
+	margin-top: 25px;
+	margin-bottom: 10px;
+	margin-left: 5px;
+	width: 979px;
+	height: 150px;
+	border-bottom-right-radius: 7px;
+	border-bottom-left-radius: 7px;
+	background: url(../images/centerfon.png) no-repeat;
+	box-shadow: 0 0 7px $black_50;
+}
+.center-link {
+	position: absolute;
+	margin-top: 20px;
+	width: 288px;
+	height: 161px;
+}
+#center3 {
+	margin-left: 680px;
+	background: url(../images/center3.png) no-repeat;
+
+	&:hover {
+		background: url(../images/center3hover.png) no-repeat;
+	}
+}
+#center2 {
+	margin-left: 350px;
+	background: url(../images/center2.png) no-repeat;
+
+	&:hover {
+		background: url(../images/center2hover.png) no-repeat;
+	}
+}
+#center1 {
+	margin-left: 20px;
+	background: url(../images/center1.png) no-repeat;
+
+	&:hover {
+		background: url(../images/center1hover.png) no-repeat;
+	}
+}

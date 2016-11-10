@@ -1,0 +1,136 @@
+.sf-menu {
+	float: left;
+	margin: 0;
+	margin-bottom: 1em;
+	padding: 0;
+	list-style: none;
+
+	* {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+
+	li {
+		position: relative;
+		background: $color_tropical_blue_approx;
+		white-space: nowrap;
+		*white-space: normal;
+		transition: background .2s;
+
+		&:hover {
+			background: $color_hawkes_blue_approx;
+			transition: none;
+
+			> ul {
+				display: block;
+			}
+		}
+
+		&.sfHover {
+			background: $color_hawkes_blue_approx;
+			transition: none;
+
+			> ul {
+				display: block;
+			}
+		}
+	}
+
+	ul {
+		position: absolute;
+		top: 100%;
+		left: 0;
+		z-index: 99;
+		display: none;
+		min-width: 12em;
+		*width: 12em;
+		box-shadow: 2px 2px 6px $black_20;
+
+		ul {
+			top: 0;
+			left: 100%;
+
+			li {
+				background: $color_rock_blue_approx;
+			}
+		}
+
+		li {
+			background: $color_perano_approx;
+		}
+	}
+
+	> li {
+		float: left;
+	}
+
+	a {
+		position: relative;
+		display: block;
+		padding: .75em 1em;
+		border-top: 1px solid $color_pattens_blue_approx;
+		border-top: 1px solid $white_50;
+		border-left: 1px solid $white;
+		color: $color_torea_bay_approx;
+		text-decoration: none;
+		zoom: 1;
+	}
+}
+.sf-arrows {
+	.sf-with-ul {
+		padding-right: 2.5em;
+		*padding-right: 1em;
+
+		&:after {
+			position: absolute;
+			top: 50%;
+			right: 1em;
+			margin-top: -3px;
+			width: 0;
+			height: 0;
+			border: 5px solid transparent;
+			border-top-color: $color_pattens_blue_approx;
+			border-top-color: $white_50;
+			content: '';
+		}
+	}
+
+	> li {
+		> .sf-with-ul:focus:after {
+			border-top-color: $white;
+		}
+
+		&:hover > .sf-with-ul:after {
+			border-top-color: $white;
+		}
+	}
+
+	ul {
+		li {
+			> .sf-with-ul:focus:after {
+				border-left-color: $white;
+			}
+
+			&:hover > .sf-with-ul:after {
+				border-left-color: $white;
+			}
+		}
+
+		.sf-with-ul:after {
+			margin-top: -5px;
+			margin-right: -3px;
+			border-color: transparent;
+			border-left-color: $color_pattens_blue_approx;
+			border-left-color: $white_50;
+		}
+
+		.sfHover > .sf-with-ul:after {
+			border-left-color: $white;
+		}
+	}
+
+	> .sfHover > .sf-with-ul:after {
+		border-top-color: $white;
+	}
+}
