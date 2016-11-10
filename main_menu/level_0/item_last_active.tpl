@@ -1,1 +1,1 @@
-<li style="padding-left:27px;"><a href="{$link}" title="{$title}">{$title}</a>{$wrapper}</li>
+<li class="menu-item last active"><a href="{$link}" title="{$title}">{$title}</a>{$wrapper}</li>

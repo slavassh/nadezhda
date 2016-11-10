@@ -9,13 +9,11 @@
 <meta name="generator" content="Artproject Group Ltd." />
 <meta name='yandex-verification' content='5e20b9e4fc34f62f' />
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<link rel="stylesheet" type="text/css" href="{$THEME}/css/general.css" />
-<link rel="stylesheet" type="text/css" href="{$THEME}/css/slideshow.css" />
-<link rel="stylesheet" type="text/css" href="{$THEME}/css/main.css" />
+<link rel="stylesheet" type="text/css" href="{$THEME}/css/style.css" />
 <script type="text/javascript" src="{$THEME}/js/jquery.js"></script>
-<script type="text/javascript" src="{$THEME}/js/jquery.hoverIntent.js"></script>
-<script type="text/javascript" src="{$THEME}/js/superfish.js"></script>
-<script type="text/javascript" src="{$THEME}/js/jquery.cycle.js"></script>
+<script type="text/javascript" src="{$THEME}/js/hoverIntent.js"></script>
+<!--<script type="text/javascript" src="{$THEME}/js/superfish.js">-->
+<script type="text/javascript" src="{$THEME}/js/jquery.cycle.lite.js"></script>
 <script type="text/javascript" src="{$THEME}/js/jquery.functions.js"></script>
 
 <link rel="icon" href="{$THEME}/images/favicon.png" type="image/x-icon" />
@@ -61,10 +59,12 @@
   <table width="1000" align="center">
     <tr>
       <td>
-<a href="/"><div id="logo"></div></a>
-<a href="http://children.chelnadezhda.edu.ru"><div id="detstran"></div></a>
-<a href="/news"><div id="news"></div></a>
-<a href="/feedback"><div id="interpriem"></div></a>
+        <a id="logo" href="/"></a>
+        <div class="top-links">
+          <a class="top-link interpriem" href="/feedback"></a>          
+          <a class="top-link news" href="/news"></a>
+          <a class="top-link detstran" href="http://children.chelnadezhda.edu.ru"></a>          
+        </div>
       </td>
     </tr>
   </table>
@@ -72,16 +72,9 @@
 <div id="conteiner">
   <!-- BEGIN HEADER -->
   <div id="header">
-   <table width="994" border="0" align="center" style="margin-top:0px; margin-left:-8px;">
-        <tr>
-          <td><div id="navigation">
-    {load_menu('main_menu')}
-   </div>
-   </td>
-  </tr>
-</td>
-  </tr>
-</table>
+    <div id="navigation">
+      {load_menu('main_menu')}
+    </div>
   </div>
 
   {if $page_type == 'main'}
@@ -273,5 +266,6 @@
 </script>
 <noscript><div><img src="//mc.yandex.ru/watch/17281759" style="position:absolute; left:-9999px;" alt="" /></div></noscript>{/literal}
 <!-- /Yandex.Metrika counter -->
+
 </body>
 </html>
