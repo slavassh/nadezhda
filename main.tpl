@@ -11,84 +11,63 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <link rel="stylesheet" type="text/css" href="{$THEME}/css/style.css" />
 <script type="text/javascript" src="{$THEME}/js/jquery.js"></script>
-<script type="text/javascript" src="{$THEME}/js/hoverIntent.js"></script>
-<!--<script type="text/javascript" src="{$THEME}/js/superfish.js">-->
 <script type="text/javascript" src="{$THEME}/js/jquery.cycle.lite.js"></script>
 <script type="text/javascript" src="{$THEME}/js/jquery.functions.js"></script>
+<script type="text/javascript" src="{$THEME}/js/hoverIntent.js"></script>
+<script type="text/javascript" src="{$THEME}/js/superfish.js"></script>
 
 <link rel="icon" href="{$THEME}/images/favicon.png" type="image/x-icon" />
 
 </head>
 <body>
-<div id="topline">
+<div class="topline"></div>
   <!-- BEGIN HEADER -->
-  <table width="1000" align="center">
-    <tr>
-      <td>
-  <div id="header">
-  	<div class="topmenu">
-    	<div class="topmenu_l">
-        	<div class="topmenu_r">
-                <ul>
-					{if $is_logged_in}
-					<li class="first">{lang('lang_logged_in_as')} <b>{$username}</b></li>
-					<li><a href="{site_url('auth/logout')}">{lang('lang_logout')}</a></li>
-					{else:}
-                    <li class="first"><a href="{site_url('auth/login')}">Вход</a></li>
-                    <li><a href="{site_url('auth/register')}">Регистрация</a></li>
-					{/if}
-                </ul>
-          	</div>
-        </div>    
-    </div>
-          </td>
-    </tr>
-  </table>
-<table width="1000" align="center">
-    <tr>
-      <td><div id="search">
-            <form action="{site_url('search')}" method="POST">
-                <input type="submit" class="submit" value=""/>
-                <input type="text" class="text" name="text" value="Поиск..." onfocus="if(this.value=='Поиск...') this.value='';" onblur="if(this.value=='') this.value='Поиск...';"/>
-              {form_csrf()}
-    </form>
-   </div>
-         </td>
-    </tr>
-  </table>  
-  <table width="1000" align="center">
-    <tr>
-      <td>
-        <a id="logo" href="/"></a>
-        <div class="top-links">
-          <a class="top-link interpriem" href="/feedback"></a>          
-          <a class="top-link news" href="/news"></a>
-          <a class="top-link detstran" href="http://children.chelnadezhda.edu.ru"></a>          
-        </div>
-      </td>
-    </tr>
-  </table>
-</div>
-<div id="conteiner">
-  <!-- BEGIN HEADER -->
-  <div id="header">
-    <div id="navigation">
-      {load_menu('main_menu')}
-    </div>
+<div id="header">
+  <div class="topmenu">
+    <div class="topmenu_l">
+        <div class="topmenu_r">
+              <ul>
+        {if $is_logged_in}
+        <li class="first">{lang('lang_logged_in_as')} <b>{$username}</b></li>
+        <li><a href="{site_url('auth/logout')}">{lang('lang_logout')}</a></li>
+        {else:}
+                  <li class="first"><a href="{site_url('auth/login')}">Вход</a></li>
+                  <li><a href="{site_url('auth/register')}">Регистрация</a></li>
+        {/if}
+              </ul>
+          </div>
+      </div>    
   </div>
-
+  <div id="search">
+    <form action="{site_url('search')}" method="POST">
+        <input type="submit" class="submit" value=""/>
+        <input type="text" class="text" name="text" value="Поиск..." onfocus="if(this.value=='Поиск...') this.value='';" onblur="if(this.value=='') this.value='Поиск...';"/>
+      {form_csrf()}
+  </form>
+  </div>
+  <a id="logo" href="/"></a>
+  <div class="top-links">
+    <a class="top-link interpriem" href="/feedback"></a>          
+    <a class="top-link news" href="/news"></a>
+    <a class="top-link detstran" href="http://children.chelnadezhda.edu.ru"></a>          
+  </div>
+</div>
+<div id="container">
+  <div id="navigation">
+    {load_menu('main_menu')}
+  </div>
   {if $page_type == 'main'}
     <!-- BEGIN SLIDESHOW -->    
     <div id="slideshow">
       <ul id="slides">
-        <li><img src="{$THEME}/images/004.jpg" alt="" width="1000" height="330" style="-moz-box-shadow: 0 2px 5px rgba(0,0,0,0.5); -webkit-box-shadow: 0 2px 5px rgba(0,0,0,0.5); box-shadow: 0 2px 5px rgba(0,0,0,0.5); border-bottom-right-radius:13px; border-bottom-left-radius:13px" /></li>
-        <li><img src="{$THEME}/images/002.jpg" alt="" width="1000" height="330" style="-moz-box-shadow: 0 2px 5px rgba(0,0,0,0.5); -webkit-box-shadow: 0 2px 5px rgba(0,0,0,0.5); box-shadow: 0 2px 5px rgba(0,0,0,0.5);" /></li>
-        <li><img src="{$THEME}/images/003.jpg" alt="" width="1000" height="330" style="-moz-box-shadow: 0 2px 5px rgba(0,0,0,0.5); -webkit-box-shadow: 0 2px 5px rgba(0,0,0,0.5); box-shadow: 0 2px 5px rgba(0,0,0,0.5);" /></li>
-        <li><img src="{$THEME}/images/006.jpg" alt="" width="1000" height="330" style="-moz-box-shadow: 0 2px 5px rgba(0,0,0,0.5); -webkit-box-shadow: 0 2px 5px rgba(0,0,0,0.5); box-shadow: 0 2px 5px rgba(0,0,0,0.5);" /></li>
-        <li><img src="{$THEME}/images/007.jpg" alt="" width="1000" height="330" style="-moz-box-shadow: 0 2px 5px rgba(0,0,0,0.5); -webkit-box-shadow: 0 2px 5px rgba(0,0,0,0.5); box-shadow: 0 2px 5px rgba(0,0,0,0.5);" /></li>
-        <li><img src="{$THEME}/images/008.jpg" alt="" width="1000" height="330" style="border-bottom-left-radius:5px; border-bottom-right-radius:5px; -moz-box-shadow: 0 0px 5px rgba(0, 0, 0, 0.5); -webkit-box-shadow: 0 0px 5px rgba(0, 0, 0, 0.5); box-shadow: 0 0px 5px rgba(0, 0, 0, 0.5);" /></li>
-        <li><img src="{$THEME}/images/005.jpg" alt="" width="1000" height="330" style="-moz-box-shadow: 0 2px 5px rgba(0,0,0,0.5); -webkit-box-shadow: 0 2px 5px rgba(0,0,0,0.5); box-shadow: 0 2px 5px rgba(0,0,0,0.5);" /></li>
-        <li><img src="{$THEME}/images/009.jpg" alt="" width="1000" height="330" style="-moz-box-shadow: 0 2px 5px rgba(0,0,0,0.5); -webkit-box-shadow: 0 2px 5px rgba(0,0,0,0.5); box-shadow: 0 2px 5px rgba(0,0,0,0.5) border-left-bottom-radius:13px; border-right-bottom-radius:13px;" /></li>
+        <li><img src="{$THEME}/images/004.jpg" alt="" /></li>
+        <li><img src="{$THEME}/images/002.jpg" alt="" /></li>
+        <li><img src="{$THEME}/images/003.jpg" alt="" /></li>
+        <li><img src="{$THEME}/images/006.jpg" alt="" /></li>
+        <li><img src="{$THEME}/images/007.jpg" alt="" /></li>
+        <li><img src="{$THEME}/images/008.jpg" alt="" /></li>
+        <li><img src="{$THEME}/images/005.jpg" alt="" /></li>
+        <li><img src="{$THEME}/images/009.jpg" alt="" /></li>        
       </ul>
       <div id="slideshow_violator">
         <div id="slide_navigation"></div>
@@ -96,24 +75,18 @@
     </div>    
     <!-- END SLIDESHOW -->
     {/if}
-
-    <a href="http://www.usynovite.ru/db"><div class="center-link" id="center3"></div></a>
-    <a href="/vam-usynoviteli"><div class="center-link" id="center2"></div></a>
-    <a href="/letocompany"><div class="center-link" id="center1"></div></a>
-  <div id="centerfon" align="center"></div>
-  <div id="main">
-  
-  
-   
-   
-    
-    <!-- BEGIN CONTEINER -->
-{if $CI->uri->segment(1) != 'feedback' && $CI->uri->segment(1) != 'gallery'}
-	<div id="content">{$content}</div>
-{else:}
-	<div id="no_sidebar_content">{$content}</div>
-{/if}    
-
+    <div class="featured-links">
+      <a class="featured-link first" href="http://www.usynovite.ru/db">Дни открытых дверей</a>
+      <a class="featured-link center" href="/vam-usynoviteli">Вам, усыновители...</a>
+      <a class="featured-link last" href="/letocompany">Ищу маму и папу...</a>
+    </div>
+  <div id="main">    
+    <!-- BEGIN CONTENT -->
+    {if $CI->uri->segment(1) != 'feedback' && $CI->uri->segment(1) != 'gallery'}
+      <div id="content">{$content}</div>
+    {else:}
+      <div id="no_sidebar_content">{$content}</div>
+    {/if}    
     <!-- END CONTENT -->
     
     
@@ -211,8 +184,7 @@
     
     
     
-    <div class="sp"></div>
-    </div>
+    <div class="sp"></div>    
   <div class="sp"></div>
   </div>
 <table width="1000" align="center">

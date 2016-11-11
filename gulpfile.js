@@ -9,16 +9,23 @@ var browserSync     = require("browser-sync");
 var autoprefixer    = require("autoprefixer");
 var mqpacker        = require("css-mqpacker");
 
-// Proxy + watching
+var paths = {  
+  css:['postcss/**/*.css'],
+  other:['images/**/*.*',
+         '*.tpl',
+         'js/**/*.js',
+         'main_menu/**/*.tpl',
+         'widgets/**/*.tpl']
+};
+
 gulp.task('server', ['style'], function() {
     browserSync.init({
         proxy: "chelnadezhda.dev"
     });
 });
 
-// Compile sass into CSS & auto-inject into browsers
 gulp.task('style', function() {
-    return gulp.src("postcss/style.css")      
+    return gulp.src("postcss/style.css")
       .pipe(plumber())
       .pipe(sourcemaps.init())
       .pipe(postcss([
@@ -27,11 +34,8 @@ gulp.task('style', function() {
           sort: true
         }),
         autoprefixer({browsers: [
-          "last 1 version",
-          "last 2 Chrome versions",
-          "last 2 Firefox versions",
-          "last 2 Opera versions",
-          "last 2 Edge versions"
+          "last 2 version",
+          "not ie <= 8"
         ]})
       ]))      
       .pipe(sourcemaps.write())
@@ -44,8 +48,8 @@ gulp.task('reload', function () {
 });
 
 gulp.task('watch', function () {
-  gulp.watch("postcss/**/*.css", ['style']);
-  gulp.watch("[**/*.{php,tpl}, images/**/*.*, js/**/*.js]", ['reload']);
+  gulp.watch(paths.css, ['style']);
+  gulp.watch(paths.other, ['reload']);
 });
 
 // Default Task

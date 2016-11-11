@@ -3,7 +3,7 @@ body {
 	padding: 0;
 	background: $color_blizzard_blue_approx;
 	background-image: url(../images/bg_bottom.jpg), url(../images/bg_top.jpg);
-	background-position: bottom, top, center;
+	background-position: center bottom, center top;
 	background-repeat: repeat-x;
 	color: $color_storm_dust_approx;
 	list-style-type: none;
@@ -85,6 +85,7 @@ form {
 		cursor: pointer;
 	}
 }
+
 ul {
 	margin: 0;
 	padding: 0;
@@ -181,28 +182,22 @@ h2 {
 	font-size: 14px;
 	line-height: 42px;
 }
-html* {
-	z-index: 2;
-}
+
 #navigation {
-	position: absolute;
-	width: 1000px;
+	z-index: 9;
 	height: 55px;
 	border-top-left-radius: 13px;
 	border-top-right-radius: 13px;
 	background: url(../images/navigation.png) center top no-repeat;
 	box-shadow: 0 2px 5px $black_50;
+}
 
-	* {
-		z-index: 3;
-	}
-
-	ul li {
+ul.sf-menu {
+	li {
 		float: left;
 
 		a {
-			display: block;
-			margin-left: 10px;
+			display: block;		
 			padding-top: 10px;
 			color: $white;
 			text-decoration: none;
@@ -218,13 +213,22 @@ html* {
 		}
 	}
 }
-#conteiner {
-	margin: 0 auto;
-	width: 990px;
+
+.topline {
+	height: 6px;
+	background: url(../images/topline.png) top center repeat-x;
 }
+
+#container {
+	margin: 0 auto;
+	width: 1000px;
+}
+
 #header {
 	position: relative;
-	padding: 0 0 27px 0;
+	margin: 0 auto;	
+	width: 1000px;
+	@mixin clearfix;
 
 	.left {
 		margin: 27px 0 0;
@@ -265,8 +269,7 @@ html* {
 
 #logo {
 	float: left;	
-	margin-top: 100px;
-	margin-top: 70px;
+	margin-top: 110px;
 	margin-bottom: 20px;
 	padding: 0;
 	width: 540px;
@@ -285,7 +288,7 @@ html* {
 
 .top-links {
 	float: right;
-	margin-top: 100px;
+	margin-top: 135px;
 	width: 438px;
 	text-align: right;
 }
@@ -324,10 +327,8 @@ html* {
 }
 
 .topmenu {
-	position: absolute;
-	top: -3px;
-	right: 7px;
-	margin-top: 6px;
+	position: absolute;	
+	right: 11px;	
 	border-bottom-right-radius: 9px;
 	border-bottom-left-radius: 9px;
 	background: url(../images/topmenu.png) repeat-x 0 0;
@@ -371,10 +372,11 @@ html* {
 .menu-item {
 	padding-left: 22px;
 }
+
 #search {
 	position: absolute;
-	margin-top: 30px;
-	margin-left: 790px;
+	top: 60px;
+	right: 11px;
 	width: 200px;
 	height: 32px;
 	border-radius: 5px;
@@ -505,14 +507,9 @@ html* {
 	#icons {
 		padding-left: 32px;
 		text-align: left;
-
-		img {
-		}
 	}
 }
 #main {
-	margin-left: -5px;
-	width: 1000px;
 	border-radius: 13px;
 	background-color: $white;
 	box-shadow: 0 0 13px $black_30;

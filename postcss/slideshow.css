@@ -1,61 +1,62 @@
 #slideshow {
-	z-index: 1;
-	margin-top: 15px;
-	margin-bottom: 0;
-	margin-left: -5px;
-	height: 310px;
+	z-index: 1;	
+	margin-bottom: 0;	
+	box-shadow: 0 2px 5px $black_50;
+	height: 330px;
 	img {
 		border: 0;
 	}
-	#slideshow_violator {
-		position: relative;
-		z-index: 200;
-		float: left;
-		width: 994px;
-		height: 50px;
-		#project_caption {
-			display: none;
-			float: left;
-			padding: 5px 10px;
-			width: auto;
-			background: transparent;
-			color: $white;
-			font-weight: normal;
-			div {
-				padding: 0;
-				color: $color_malibu_approx;
-				font-weight: normal;
-				font-size: 15px;
-			}
-			a.title {
-				display: block;
-				color: $color_malibu_approx;
-				text-decoration: none;
-				&:hover {
-					text-decoration: underline;
-				}
-			}
-		}
-		#slide_navigation a {
-			display: block;
-			float: left;
-			overflow: hidden;
-			margin-left: 5px;
-			width: 12px;
-			height: 12px;
-			text-indent: -9999px;
-			cursor: pointer;
-		}
-	}
+
 	li .slide_caption {
 		display: none;
 	}
 }
-#slides {
+
+#slideshow_violator {
 	position: relative;
-	top: 10px;
-	width: 678px;
-	height: 310px;
+	z-index: 200;
+	float: left;
+	width: 994px;
+	height: 50px;
+}
+
+#project_caption {
+	display: none;
+	float: left;
+	padding: 5px 10px;
+	width: auto;
+	background: transparent;
+	color: $white;
+	font-weight: normal;
+	div {
+		padding: 0;
+		color: $color_malibu_approx;
+		font-weight: normal;
+		font-size: 15px;
+	}
+	a.title {
+		display: block;
+		color: $color_malibu_approx;
+		text-decoration: none;
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}
+
+#slide_navigation a {
+	display: block;
+	float: left;
+	overflow: hidden;
+	margin-left: 5px;
+	width: 12px;
+	height: 12px;
+	text-indent: -9999px;
+	cursor: pointer;
+}
+
+#slides {
+	position: relative;	
 	li {
 		position: absolute;
 		top: 0;
