@@ -11,42 +11,49 @@ $color_blizzard_blue_approx:  #9ce1f1;
 $color_storm_dust_approx:     #666666;
 $color_azure_radiance_approx: #09f;
 
-$wild_sand: #f4f4f4;
-$color_bon_jour_approx: #dfdfdf;
-$color_midnight_blue_approx: #002a61;
-$color_chathams_blue_approx: #0d507d;
-$color_cerulean_approx: #00aeef;
-$color_mountain_mist_approx: #999999;
-$color_alabaster_approx: #f9f9f9;
-$color_mine_shaft_approx: #333333;
-$color_mercury_approx: #e3e3e3;
-$color_alto_approx: #dddddd;
-$color_romance_approx: #fefefe;
-$color_desert_storm_approx: #f8f8f8;
-$concrete: #f2f2f2;
-$red: #f00;
-$midnight_blue: #036;
-$color_blue_chill_approx: #11849b;
+$wild_sand:                   #f4f4f4;
+$color_bon_jour_approx:       #dfdfdf;
+$color_midnight_blue_approx:  #002a61;
+$color_chathams_blue_approx:  #0d507d;
+$color_cerulean_approx:       #00aeef;
+$color_mountain_mist_approx:  #999999;
+$color_alabaster_approx:      #f9f9f9;
+$color_mine_shaft_approx:     #333333;
+$color_mercury_approx:        #e3e3e3;
+$color_alto_approx:           #dddddd;
+$color_romance_approx:        #fefefe;
+$color_desert_storm_approx:   #f8f8f8;
+$concrete:                    #f2f2f2;
+$midnight_blue:               #036;
+$color_blue_chill_approx:     #11849b;
 
 /*main*/
-$blaze_orange: #f60;
-$color_atlantis_approx: #91cb31;
+
+$color_atlantis_approx:       #91cb31;
+
+/*slideshow*/
+$color_malibu_approx:         #6ab5ff;
+
+$red:                         #f00;
+$blaze_orange:                #f68b1f;
+$yellow:                      #f5a900;
+$green:                       #009500;
+$cyan:                        #00b3d3;
+$blue:                        #004490;
+$pink:                        #ea228a;
+
 
 /*superfish*/
-$color_pattens_blue_approx: #dfeeff;
 $color_torea_bay_approx: #13a;
-$color_tropical_blue_approx: #bdd2ff;
 $color_perano_approx: #aabde6;
 $color_rock_blue_approx: #9aaedb;
 $color_hawkes_blue_approx: #cfdeff;
 
 
-$font_0: Arial;
-$font_1: Helvetica;
-$font_2: sans-serif;
+$font_primary: 'PT Astra Sans', Arial, Helvetica, sans-serif;
 
-/*slideshow*/
-$color_malibu_approx: #6ab5ff;
+
+
 
 
 $color-primary-blank:         $white;

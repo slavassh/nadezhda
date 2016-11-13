@@ -5,3 +5,12 @@
       content: "";
     }
 }
+
+@define-mixin menu_color $color, $i {
+  &:nth-of-type(7n+$(i)) {
+		background-color: $(color);
+		&:hover {
+			background-color: color($(color) a(75%));
+		}
+	}
+}

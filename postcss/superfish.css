@@ -1,25 +1,17 @@
-.sf-menu {
-	float: left;
+ul.sf-menu {
+	display: table;
 	margin: 0;
-	margin-bottom: 1em;
-	padding: 0;
+	padding: 0;	
 	list-style: none;
-
-	* {
-		margin: 0;
-		padding: 0;
-		list-style: none;
-	}
 
 	li {
 		position: relative;
-		background: $color_tropical_blue_approx;
+		display: table-cell;
 		white-space: nowrap;
 		*white-space: normal;
 		transition: background .2s;
 
-		&:hover {
-			background: $color_hawkes_blue_approx;
+		&:hover {			
 			transition: none;
 
 			> ul {
@@ -33,6 +25,17 @@
 
 			> ul {
 				display: block;
+			}
+		}
+
+		a {
+			display: block;
+			color: $white;
+			text-decoration: none;			
+			text-shadow: 1px 1px 1px $black_20;
+
+			&:hover {				
+				color: $wild_sand;
 			}
 		}
 	}
@@ -61,22 +64,19 @@
 		}
 	}
 
-	> li {
+	/*> li {
 		float: left;
-	}
-
+	}*/
 	a {
 		position: relative;
 		display: block;
-		padding: .75em 1em;
-		border-top: 1px solid $color_pattens_blue_approx;
-		border-top: 1px solid $white_50;
-		border-left: 1px solid $white;
+		padding: .75em 1em;		
 		color: $color_torea_bay_approx;
 		text-decoration: none;
 		zoom: 1;
 	}
 }
+
 .sf-arrows {
 	.sf-with-ul {
 		padding-right: 2.5em;
@@ -89,20 +89,18 @@
 			margin-top: -3px;
 			width: 0;
 			height: 0;
-			border: 5px solid transparent;
-			border-top-color: $color_pattens_blue_approx;
-			border-top-color: $white_50;
+			border: 5px solid transparent;			
 			content: '';
 		}
 	}
 
 	> li {
 		> .sf-with-ul:focus:after {
-			border-top-color: $white;
+			
 		}
 
 		&:hover > .sf-with-ul:after {
-			border-top-color: $white;
+			
 		}
 	}
 
@@ -121,7 +119,6 @@
 			margin-top: -5px;
 			margin-right: -3px;
 			border-color: transparent;
-			border-left-color: $color_pattens_blue_approx;
 			border-left-color: $white_50;
 		}
 
@@ -133,4 +130,14 @@
 	> .sfHover > .sf-with-ul:after {
 		border-top-color: $white;
 	}
+}
+
+.menu-item {
+	@mixin menu_color $red, 1;
+	@mixin menu_color $blaze_orange, 2;
+	@mixin menu_color $yellow, 3;
+	@mixin menu_color $green, 4;
+	@mixin menu_color $cyan, 5;
+	@mixin menu_color $blue, 6;
+	@mixin menu_color $pink, 7;
 }

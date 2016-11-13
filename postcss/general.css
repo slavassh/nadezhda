@@ -7,8 +7,16 @@ body {
 	background-repeat: repeat-x;
 	color: $color_storm_dust_approx;
 	list-style-type: none;
-	font-size: 12px;
-	font-family: $font_0, $font_1, $font_2;
+	font-size: 17px;
+	font-family: $font_primary;
+}
+h1 {
+	padding: 8px 0;
+	font-size: 38px;
+}
+h2 {
+	padding: 8px 0;
+	font-size: 36px;
 }
 h3 {
 	margin: 0 0 5px 0;
@@ -58,8 +66,8 @@ form {
 			border-radius: 10px;
 			background: none;
 			color: $color_storm_dust_approx;
-			font-size: 12px;
-			font-family: $font_0, $font_1, $font_2;
+			
+			font-family: $font_primary;
 		}
 
 		textarea {
@@ -68,8 +76,8 @@ form {
 			border-radius: 10px;
 			background: none;
 			color: $color_storm_dust_approx;
-			font-size: 12px;
-			font-family: $font_0, $font_1, $font_2;
+			
+			font-family: $font_primary;
 		}
 	}
 
@@ -147,14 +155,7 @@ ul {
 		height: 210px;
 	}
 }
-h1 {
-	padding: 8px 0;
-	font-size: 38px;
-}
-h2 {
-	padding: 8px 0;
-	font-size: 36px;
-}
+
 .left {
 	float: left;
 }
@@ -185,33 +186,9 @@ h2 {
 
 #navigation {
 	z-index: 9;
-	height: 55px;
 	border-top-left-radius: 13px;
-	border-top-right-radius: 13px;
-	background: url(../images/navigation.png) center top no-repeat;
+	border-top-right-radius: 13px;	
 	box-shadow: 0 2px 5px $black_50;
-}
-
-ul.sf-menu {
-	li {
-		float: left;
-
-		a {
-			display: block;		
-			padding-top: 10px;
-			color: $white;
-			text-decoration: none;
-			text-transform: uppercase;
-			text-shadow: 1px 1px 1px $black_20;
-			font-weight: bold;
-			font-size: 12px;
-
-			&:hover {
-				border-bottom: 1px dotted $black;
-				color: $black;
-			}
-		}
-	}
 }
 
 .topline {
@@ -288,6 +265,7 @@ ul.sf-menu {
 
 .top-links {
 	float: right;
+	font-size: 0;
 	margin-top: 135px;
 	width: 438px;
 	text-align: right;
@@ -369,10 +347,6 @@ ul.sf-menu {
 	font-size: 11px;
 }
 
-.menu-item {
-	padding-left: 22px;
-}
-
 #search {
 	position: absolute;
 	top: 60px;
@@ -405,7 +379,7 @@ ul.sf-menu {
 		border: 0;
 		background: none;
 		color: $color_cerulean_approx;
-		font-size: 12px;
+		
 	}
 }
 #sidebar {
@@ -457,7 +431,7 @@ ul.sf-menu {
 					padding: 15px 10px;
 					color: $color_storm_dust_approx;
 					text-decoration: none;
-					font-size: 12px;
+					
 
 					&:hover {
 						background: $color_alabaster_approx;
@@ -494,7 +468,7 @@ ul.sf-menu {
 				color: $color_storm_dust_approx;
 				text-decoration: none;
 				font-weight: normal;
-				font-size: 12px;
+				
 				line-height: 162%;
 
 				&:hover {
@@ -560,7 +534,6 @@ ul.sf-menu {
 	margin-bottom: 30px;
 	padding-bottom: 32px;
 	border-bottom: 1px dotted $color_alto_approx;
-	font-size: 12px;
 	line-height: 175%;
 }
 .homepage_widget {
@@ -568,7 +541,6 @@ ul.sf-menu {
 	margin-top: -7px;
 	margin-bottom: 30px;
 	height: 100%;
-	font-size: 12px;
 	line-height: 175%;
 
 	p {
@@ -711,7 +683,7 @@ ul.sf-menu {
 	color: $color_mine_shaft_approx;
 	text-align: right;
 	word-spacing: 2px;
-	font-size: 12px;
+	
 
 	a {
 		color: $color_mine_shaft_approx;
@@ -750,18 +722,18 @@ ul.sf-menu {
 
 	.left {
 		margin-top: 18px;
-		font-size: 12px;
+		
 		line-height: 167%;
 
 		.credits {
 			color: $color_mine_shaft_approx;
-			font-size: 12px;
+			
 		}
 	}
 
 	ul {
 		float: right;
-		font-size: 12px;
+		
 	}
 
 	li {
