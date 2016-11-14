@@ -57,4 +57,5 @@ $font_primary: 'PT Astra Sans', Arial, Helvetica, sans-serif;
 
 
 $color-primary-blank:         $white;
-$color-primary-text:          $black;
+$color-text-primary:          $black;
+$color-text-secondary:        $color_blue_chill_approx;

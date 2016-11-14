@@ -7,8 +7,8 @@ ul.sf-menu {
 	li {
 		position: relative;
 		display: table-cell;
-		white-space: nowrap;
-		*white-space: normal;
+		text-transform: uppercase;			
+		white-space: normal;
 		transition: background .2s;
 
 		&:hover {			
@@ -30,8 +30,11 @@ ul.sf-menu {
 
 		a {
 			display: block;
+			box-sizing: border-box;
+			min-height: 66px;
 			color: $white;
-			text-decoration: none;			
+			text-decoration: none;
+			
 			text-shadow: 1px 1px 1px $black_20;
 
 			&:hover {				
@@ -48,19 +51,22 @@ ul.sf-menu {
 		display: none;
 		min-width: 12em;
 		*width: 12em;
-		box-shadow: 2px 2px 6px $black_20;
+		box-shadow: 2px 4px 5px $black_20;
 
 		ul {
 			top: 0;
 			left: 100%;
 
 			li {
-				background: $color_rock_blue_approx;
+				text-transform: none;
 			}
 		}
 
 		li {
-			background: $color_perano_approx;
+			text-transform: none;
+			a {
+				min-height: 1em;
+			}
 		}
 	}
 
@@ -71,7 +77,6 @@ ul.sf-menu {
 		position: relative;
 		display: block;
 		padding: .75em 1em;		
-		color: $color_torea_bay_approx;
 		text-decoration: none;
 		zoom: 1;
 	}
@@ -107,28 +112,26 @@ ul.sf-menu {
 	ul {
 		li {
 			> .sf-with-ul:focus:after {
-				border-left-color: $white;
+				
 			}
 
 			&:hover > .sf-with-ul:after {
-				border-left-color: $white;
+				
 			}
 		}
 
 		.sf-with-ul:after {
 			margin-top: -5px;
 			margin-right: -3px;
-			border-color: transparent;
-			border-left-color: $white_50;
+			border-color: transparent;			
 		}
 
-		.sfHover > .sf-with-ul:after {
-			border-left-color: $white;
+		.sfHover > .sf-with-ul:after {			
 		}
 	}
 
 	> .sfHover > .sf-with-ul:after {
-		border-top-color: $white;
+		
 	}
 }
 
@@ -140,4 +143,11 @@ ul.sf-menu {
 	@mixin menu_color $cyan, 5;
 	@mixin menu_color $blue, 6;
 	@mixin menu_color $pink, 7;
+	&.last {
+		border-top-right-radius: 13px;
+	}
+
+	&.first {
+		border-top-left-radius: 13px;
+	}
 }

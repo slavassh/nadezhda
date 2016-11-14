@@ -51,7 +51,7 @@
       </div>
     </div>
     <div id="container">
-      <div id="navigation">
+      <div class="navigation">
         {load_menu('main_menu')}
       </div>
       {if $page_type == 'main'}
@@ -67,9 +67,6 @@
             <li><img src="{$THEME}/images/005.jpg" alt="" /></li>
             <li><img src="{$THEME}/images/009.jpg" alt="" /></li>        
           </ul>
-          <div id="slideshow_violator">
-            <div id="slide_navigation"></div>
-          </div>
         </div>    
         <!-- END SLIDESHOW -->
         {/if}
@@ -84,7 +81,11 @@
           <div id="content">{$content}</div>
         {else:}
           <div id="no_sidebar_content">{$content}</div>
-        {/if}    
+        {/if}
+        <div class="recent-news">
+          {widget('recent_news')}
+        </div>
+        
         <!-- END CONTENT -->
         
         
@@ -165,7 +166,7 @@
               {widget('works')}
             </div>
           </div>
-        </div>
+        
         
         {else:}
         
@@ -174,34 +175,27 @@
         
         {/if}        
         
-        {/if}
-        
-        <div class="sp"></div>    
-      <div class="sp"></div>
+        {/if}        
       </div>
-    <table width="1000" align="center">
-      <tr>
-        <td><a href="http://минобрнауки.рф"><img src="{$THEME}/images/minobrrf.png" width="166px" height="58px" style="margin-left:-3px; margin-top:20px; border-radius:13px; -moz-box-shadow: 0 0px 13px rgba(0, 0, 0, 0.2); -webkit-box-shadow: 0 0px 13px rgba(0, 0, 0, 0.2); box-shadow: 0 0px 13px rgba(0, 0, 0, 0.2);"></img></a>
-    <a href="http://www.minobr74.ru"><img src="{$THEME}/images/minobr.png" width="166px" height="58px" style="margin-left:38px; margin-top:-58px; border-radius:13px; -moz-box-shadow: 0 0px 13px rgba(0, 0, 0, 0.2); -webkit-box-shadow: 0 0px 13px rgba(0, 0, 0, 0.2); box-shadow: 0 0px 13px rgba(0, 0, 0, 0.2); "></img></a>
-    <a href="http://minsoc74.ru"><img src="{$THEME}/images/minsocial.png" width="166px" height="58px" style="margin-left:38px; margin-top:-58px; border-radius:13px; -moz-box-shadow: 0 0px 13px rgba(0, 0, 0, 0.2); -webkit-box-shadow: 0 0px 13px rgba(0, 0, 0, 0.2); box-shadow: 0 0px 13px rgba(0, 0, 0, 0.2);"></img></a>
-    <a href="http://socchel.ru"><img src="{$THEME}/images/uprpodelamobr.png" width="166px" height="58px" style="margin-left:38px; margin-top:-58px; border-radius:13px; -moz-box-shadow: 0 0px 13px rgba(0, 0, 0, 0.2); -webkit-box-shadow: 0 0px 13px rgba(0, 0, 0, 0.2); box-shadow: 0 0px 13px rgba(0, 0, 0, 0.2);"></img></a>
-    <a href="http://usznsov.ru"><img src="{$THEME}/images/uprobr.png" width="166px" height="58px" style="margin-left:38px; margin-top:-58px; border-radius:13px; -moz-box-shadow: 0 0px 13px rgba(0, 0, 0, 0.2); -webkit-box-shadow: 0 0px 13px rgba(0, 0, 0, 0.2); box-shadow: 0 0px 13px rgba(0, 0, 0, 0.2);"></img></a>
-    <br>
-    <a href="http://www.edu.ru"><img src="{$THEME}/images/edu.png" width="166px" height="58px" style="margin-left:-3px; margin-top:20px; border-radius:13px; -moz-box-shadow: 0 0px 13px rgba(0, 0, 0, 0.2); -webkit-box-shadow: 0 0px 13px rgba(0, 0, 0, 0.2); box-shadow: 0 0px 13px rgba(0, 0, 0, 0.2);"></img></a>
-    <a href="http://window.edu.ru"><img src="{$THEME}/images/edinoeokno.png" width="166px" height="58px" style="margin-left:38px; margin-top:-58px; border-radius:13px; -moz-box-shadow: 0 0px 13px rgba(0, 0, 0, 0.2); -webkit-box-shadow: 0 0px 13px rgba(0, 0, 0, 0.2); box-shadow: 0 0px 13px rgba(0, 0, 0, 0.2);"></img></a>
-    <a href="http://school-collection.edu.ru"><img src="{$THEME}/images/edinkollekcia.png" width="166px" height="58px" style="margin-left:38px; margin-top:-58px; border-radius:13px; -moz-box-shadow: 0 0px 13px rgba(0, 0, 0, 0.2); -webkit-box-shadow: 0 0px 13px rgba(0, 0, 0, 0.2); box-shadow: 0 0px 13px rgba(0, 0, 0, 0.2);"></img></a>
-    <a href="http://fcior.edu.ru"><img src="{$THEME}/images/fedcentrobrresurs.png" width="166px" height="58px" style="margin-left:38px; margin-top:-58px; border-radius:13px; -moz-box-shadow: 0 0px 13px rgba(0, 0, 0, 0.2); -webkit-box-shadow: 0 0px 13px rgba(0, 0, 0, 0.2); box-shadow: 0 0px 13px rgba(0, 0, 0, 0.2);"></img>
-    <a href="http://ipk74.ru"><img src="{$THEME}/images/chipkro.png" width="166px" height="58px" style="margin-left:38px; margin-top:-58px; border-radius:13px; -moz-box-shadow: 0 0px 13px rgba(0, 0, 0, 0.2); -webkit-box-shadow: 0 0px 13px rgba(0, 0, 0, 0.2); box-shadow: 0 0px 13px rgba(0, 0, 0, 0.2);"></img></a>
-    </td>
-      </tr>
-    </table>
-    <div id="toplinefooter" align="center"></div>
+      
+      <div class="footer-banners">
+        <a class="footer-banner" href="http://минобрнауки.рф"><img src="{$THEME}/images/minobrrf.png" /></a>
+        <a class="footer-banner" href="http://www.minobr74.ru"><img src="{$THEME}/images/minobr.png" /></a>
+        <a class="footer-banner" href="http://minsoc74.ru"><img src="{$THEME}/images/minsocial.png" /></a>
+        <a class="footer-banner" href="http://socchel.ru"><img src="{$THEME}/images/uprpodelamobr.png" /></a>
+        <a class="footer-banner" href="http://usznsov.ru"><img src="{$THEME}/images/uprobr.png" /></a>        
+        <a class="footer-banner" href="http://www.edu.ru"><img src="{$THEME}/images/edu.png" /></a>
+        <a class="footer-banner" href="http://window.edu.ru"><img src="{$THEME}/images/edinoeokno.png" /></a>
+        <a class="footer-banner" href="http://school-collection.edu.ru"><img src="{$THEME}/images/edinkollekcia.png" /></a>
+        <a class="footer-banner" href="http://fcior.edu.ru"><img src="{$THEME}/images/fedcentrobrresurs.png" /></a>
+        <a class="footer-banner" href="http://ipk74.ru"><img src="{$THEME}/images/chipkro.png" /></a>
+      </div>
+
     <!-- BEGIN FOOTER -->
     <div id="footer">
-      <div class="left"><strong>© 2013 - 2016, МБУ Центр "Надежда" | </strong><a href="mailto:ddom6_chel@mail.ru">ddom6_chel@mail.ru</a>
+      <div class="footer-left">© 2013 - 2016, МБУ Центр "Надежда" г. Челябинск
       </div>
-      {load_menu('bottom_menu')}
-      <div class="sp"></div>
+      {load_menu('bottom_menu')}      
     </div>
     <!-- END FOOTER -->
     <!-- Yandex.Metrika counter -->

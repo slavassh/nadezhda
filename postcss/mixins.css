@@ -10,7 +10,17 @@
   &:nth-of-type(7n+$(i)) {
 		background-color: $(color);
 		&:hover {
-			background-color: color($(color) a(75%));
+			/*background-color: color($(color) a(75%));*/
 		}
+    ul {
+      background-color: $(color);
+      li {
+        background-color: $(color);
+        &:hover {
+          background-color: color($(color) a(75%));
+        }
+      }
+    }
+
 	}
 }
