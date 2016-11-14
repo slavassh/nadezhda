@@ -83,7 +83,7 @@
           <div id="no_sidebar_content">{$content}</div>
         {/if}
         <div class="recent-news">
-          {widget('recent_news')}
+          {widget('news')}
         </div>
         
         <!-- END CONTENT -->
