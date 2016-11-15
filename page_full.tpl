@@ -1,4 +1,4 @@
-<div id="titleExt">
+<div class="titleExt">
     <h5>{widget('path')}<span class="ext">{$page.title}</span></h5>
 </div>
 

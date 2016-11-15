@@ -1,4 +1,4 @@
-<div id="titleExt"><h5>{widget('path')}<span class="ext">{$category.name}</span></h5></div>
+<div class="titleExt"><h5>{widget('path')}<span class="ext">{$category.name}</span></h5></div>
 {$category.short_desc}
 {if $no_pages}
         <p>{$no_pages}</p>
@@ -21,11 +21,6 @@
            &nbsp;&nbsp;
            <a href="{site_url($page.full_url)}">{lang('full_article')}</a>
         </div>
-
-        <div style="border-bottom:1px solid #ECECEC;">
-            &nbsp;
-        </div>
-
      </div>
 {/foreach}
 

@@ -1,4 +1,4 @@
-﻿<div style="border-top-left-radius:9px; border-bottom-left-radius:0px;" id="titleExt"><h5>{widget('path')}<span class="ext">{lang('lang_register')}</span></h5></div>
+﻿<div style="border-top-left-radius:9px; border-bottom-left-radius:0px;" class="titleExt"><h5>{widget('path')}<span class="ext">{lang('lang_register')}</span></h5></div>
 
 {if validation_errors() OR $info_message}
     <div class="errors"> 

@@ -1,4 +1,4 @@
-<div id="titleExt"><h5>{widget('path')}<span class="ext">{$category.name}</span></h5></div>
+<div class="titleExt"><h5>{widget('path')}<span class="ext">{$category.name}</span></h5></div>
 {$category.short_desc}
 {if $no_pages}
         <p>{$no_pages}</p>

@@ -50,8 +50,9 @@ ul.sf-menu {
 		z-index: 99;
 		display: none;
 		min-width: 12em;
-		*width: 12em;
+		/**width: 12em;*/
 		box-shadow: 2px 4px 5px $black_20;
+		padding-bottom: .75em;
 
 		ul {
 			top: 0;
@@ -64,8 +65,12 @@ ul.sf-menu {
 
 		li {
 			text-transform: none;
+			display: block;
+			width: 100%;
 			a {
-				min-height: 1em;
+				min-height: .5em;
+				padding-top: .4em;
+				padding-bottom: .6em; 
 			}
 		}
 	}

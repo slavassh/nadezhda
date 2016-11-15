@@ -1,4 +1,4 @@
-﻿<div id="titleExt" style="margin-top:-15px"><h5>{widget('path')}<span class="ext">Результаты поиска: {$search_title}</span></h5></div>
+﻿<div class="titleExt" style="margin-top:-15px"><h5>{widget('path')}<span class="ext">Результаты поиска: {$search_title}</span></h5></div>
 
 <br />
 

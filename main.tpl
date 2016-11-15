@@ -17,7 +17,10 @@
     <script type="text/javascript" src="{$THEME}/js/superfish.js"></script>
     <link rel="icon" href="{$THEME}/images/favicon.png" type="image/x-icon" />
   </head>
-  <body>
+  {if $page_type == 'main'}
+  <body class="frontpage">
+  {/if}
+  <body class="not-front">
     <div class="topline"></div>
     <!-- BEGIN HEADER -->
     <div id="header">
@@ -78,13 +81,11 @@
       <div id="main">    
         <!-- BEGIN CONTENT -->
         {if $CI->uri->segment(1) != 'feedback' && $CI->uri->segment(1) != 'gallery'}
-          <div id="content">{$content}</div>
+          <div class="main-content">{$content}</div>
         {else:}
           <div id="no_sidebar_content">{$content}</div>
         {/if}
-        <div class="recent-news">
-          {widget('news')}
-        </div>
+
         
         <!-- END CONTENT -->
         
@@ -177,7 +178,15 @@
         
         {/if}        
       </div>
-      
+
+
+      {if $page_type == 'main'}
+      <div class="recent-news">
+        <div class="main-content">
+         {widget('latest_news')}
+        </div>
+      </div>
+      {/if}
       <div class="footer-banners">
         <a class="footer-banner" href="http://минобрнауки.рф"><img src="{$THEME}/images/minobrrf.png" /></a>
         <a class="footer-banner" href="http://www.minobr74.ru"><img src="{$THEME}/images/minobr.png" /></a>

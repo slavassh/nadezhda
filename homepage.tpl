@@ -1,2 +1,2 @@
-<div id="title" style="padding-top:5px; padding-bottom:2px; color:#27498f"><strong><span style="margin-top:-4px;">{$page.title}</strong></div>
-<div id="detail">{$page.prev_text}</div>
+<div class="title-front"><span>{$page.title}</span></div>
+<div class="mission">{$page.prev_text}</div>

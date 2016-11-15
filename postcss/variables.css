@@ -14,7 +14,7 @@ $color_azure_radiance_approx: #09f;
 $wild_sand:                   #f4f4f4;
 $color_bon_jour_approx:       #dfdfdf;
 $color_midnight_blue_approx:  #002a61;
-$color_chathams_blue_approx:  #0d507d;
+$color_chathams_blue_approx:  #27498f;
 $color_cerulean_approx:       #00aeef;
 $color_mountain_mist_approx:  #999999;
 $color_alabaster_approx:      #f9f9f9;
@@ -58,4 +58,4 @@ $font_primary: 'PT Astra Sans', Arial, Helvetica, sans-serif;
 
 $color-primary-blank:         $white;
 $color-text-primary:          $black;
-$color-text-secondary:        $color_blue_chill_approx;
+$color-text-secondary:        $color_chathams_blue_approx;
