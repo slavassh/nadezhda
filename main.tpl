@@ -61,6 +61,16 @@
         <!-- BEGIN SLIDESHOW -->    
         <div id="slideshow">
           <ul id="slides">
+            <li><img src="{$THEME}/images/010-choko.jpg" alt="Сюрприз на новый год Шоколадный фонтан" /></li>
+            <li><img src="{$THEME}/images/011-akvilon-2.jpg" alt="Аквилон" /></li>
+            <li><img src="{$THEME}/images/012-cook-1.jpg" alt="Кулинарный поединок" /></li>
+            <li><img src="{$THEME}/images/013-cook-2.jpg" alt="Кулинарный поединок" /></li>
+            <li><img src="{$THEME}/images/014-victory.jpg" alt="" /></li>
+            <li><img src="{$THEME}/images/015-akvilon-1.jpg" alt="Аквилон" /></li>
+            <li><img src="{$THEME}/images/016-pdd.jpg" alt="Спектакль о правилах дорожного движения" /></li>
+            <li><img src="{$THEME}/images/016-pony.jpg" alt="Пониферма" /></li>
+            <li><img src="{$THEME}/images/018-skiing.jpg" alt="Лыжня России" /></li>
+            <li><img src="{$THEME}/images/019-hero.jpg" alt="Встреча с героем России" /></li>
             <li><img src="{$THEME}/images/004.jpg" alt="" /></li>
             <li><img src="{$THEME}/images/002.jpg" alt="" /></li>
             <li><img src="{$THEME}/images/003.jpg" alt="" /></li>
@@ -68,9 +78,9 @@
             <li><img src="{$THEME}/images/007.jpg" alt="" /></li>
             <li><img src="{$THEME}/images/008.jpg" alt="" /></li>
             <li><img src="{$THEME}/images/005.jpg" alt="" /></li>
-            <li><img src="{$THEME}/images/009.jpg" alt="" /></li>        
+            <li><img src="{$THEME}/images/009.jpg" alt="" /></li> 
           </ul>
-        </div>    
+        </div>
         <!-- END SLIDESHOW -->
         {/if}
         <div class="featured-links">
