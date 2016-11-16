@@ -5,9 +5,10 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <title>{$site_title}</title>
     <meta name="description" content="{$site_description}" />
-    <meta name="keywords" content="{$site_keywords}" />
-    <meta name="generator" content="Artproject Group Ltd." />
-    <meta name='yandex-verification' content='5e20b9e4fc34f62f' />
+    <meta name="keywords" content="{$site_keywords}" />    
+    <meta name="yandex-verification" content="7cf7c11102dcc0ea" />
+    <meta name="google-site-verification" content="S1wzElIt6VIK3xaisQWcYMjbvSfTpS54n7-LKLtuUx4" />
+    <meta name="msvalidate.01" content="6BDDEFCEBF6CA13D9952DA094D0AD262" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <link rel="stylesheet" type="text/css" href="{$THEME}/css/style.css" />
     <script type="text/javascript" src="{$THEME}/js/jquery.js"></script>
@@ -19,8 +20,9 @@
   </head>
   {if $page_type == 'main'}
   <body class="frontpage">
-  {/if}
+  {else:}  
   <body class="not-front">
+  {/if}
     <div class="topline"></div>
     <!-- BEGIN HEADER -->
     <div id="header">
@@ -31,7 +33,7 @@
             {if $is_logged_in}
             <li class="first">{lang('lang_logged_in_as')} <b>{$username}</b></li>
             <li><a href="{site_url('auth/logout')}">{lang('lang_logout')}</a></li>
-            {else:}
+            
                       <li class="first"><a href="{site_url('auth/login')}">Вход</a></li>
                       <li><a href="{site_url('auth/register')}">Регистрация</a></li>
             {/if}
@@ -68,7 +70,7 @@
             <li><img src="{$THEME}/images/014-victory.jpg" alt="" /></li>
             <li><img src="{$THEME}/images/015-akvilon-1.jpg" alt="Аквилон" /></li>
             <li><img src="{$THEME}/images/016-pdd.jpg" alt="Спектакль о правилах дорожного движения" /></li>
-            <li><img src="{$THEME}/images/016-pony.jpg" alt="Пониферма" /></li>
+            <li><img src="{$THEME}/images/017-pony.jpg" alt="Пониферма" /></li>
             <li><img src="{$THEME}/images/018-skiing.jpg" alt="Лыжня России" /></li>
             <li><img src="{$THEME}/images/019-hero.jpg" alt="Встреча с героем России" /></li>
             <li><img src="{$THEME}/images/004.jpg" alt="" /></li>
@@ -216,32 +218,35 @@
       </div>
       {load_menu('bottom_menu')}      
     </div>
-    <!-- END FOOTER -->
+    <!-- END FOOTER -->    
     <!-- Yandex.Metrika counter -->
     {literal}<script type="text/javascript">
-    (function (d, w, c) {
-        (w[c] = w[c] || []).push(function() {
-            try {
-                w.yaCounter17281759 = new Ya.Metrika({id:17281759,
+        (function (d, w, c) {
+            (w[c] = w[c] || []).push(function() {
+                try {
+                    w.yaCounter40939359 = new Ya.Metrika({
+                        id:40939359,
                         clickmap:true,
                         trackLinks:true,
-                        accurateTrackBounce:true});
-            } catch(e) { }
-        });
+                        accurateTrackBounce:true
+                    });
+                } catch(e) { }
+            });
 
-        var n = d.getElementsByTagName("script")[0],
-            s = d.createElement("script"),
-            f = function () { n.parentNode.insertBefore(s, n); };
-        s.type = "text/javascript";
-        s.async = true;
-        s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
+            var n = d.getElementsByTagName("script")[0],
+                s = d.createElement("script"),
+                f = function () { n.parentNode.insertBefore(s, n); };
+            s.type = "text/javascript";
+            s.async = true;
+            s.src = "https://mc.yandex.ru/metrika/watch.js";
 
-        if (w.opera == "[object Opera]") {
-            d.addEventListener("DOMContentLoaded", f, false);
-        } else { f(); }
-    })(document, window, "yandex_metrika_callbacks");
+            if (w.opera == "[object Opera]") {
+                d.addEventListener("DOMContentLoaded", f, false);
+            } else { f(); }
+        })(document, window, "yandex_metrika_callbacks");
     </script>
-    <noscript><div><img src="//mc.yandex.ru/watch/17281759" style="position:absolute; left:-9999px;" alt="" /></div></noscript>{/literal}
+    <noscript><div><img src="https://mc.yandex.ru/watch/40939359" style="position:absolute; left:-9999px;" alt="" /></div></noscript>{/literal}
     <!-- /Yandex.Metrika counter -->
   </body>
 </html>
+
