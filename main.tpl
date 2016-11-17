@@ -28,23 +28,23 @@
     <div id="header">
       <div class="topmenu">
         <div class="topmenu_l">
-            <div class="topmenu_r">
-                  <ul>
+          <div class="topmenu_r">
+            <ul>
             {if $is_logged_in}
-            <li class="first">{lang('lang_logged_in_as')} <b>{$username}</b></li>
-            <li><a href="{site_url('auth/logout')}">{lang('lang_logout')}</a></li>
-            
-                      <li class="first"><a href="{site_url('auth/login')}">Вход</a></li>
-                      <li><a href="{site_url('auth/register')}">Регистрация</a></li>
+              <li class="first">{lang('lang_logged_in_as')} <b>{$username}</b></li>
+              <li><a href="{site_url('auth/logout')}">{lang('lang_logout')}</a></li>
+            {else:}  
+              <li class="first"><a href="{site_url('auth/login')}">Вход</a></li>
+              <li><a href="{site_url('auth/register')}">Регистрация</a></li>
             {/if}
-                  </ul>
-              </div>
-          </div>    
+            </ul>
+          </div>
+        </div>    
       </div>
       <div id="search">
         <form action="{site_url('search')}" method="POST">
-            <input type="submit" class="submit" value=""/>
-            <input type="text" class="text" name="text" value="Поиск..." onfocus="if(this.value=='Поиск...') this.value='';" onblur="if(this.value=='') this.value='Поиск...';"/>
+          <input type="submit" class="submit" value=""/>
+          <input type="text" class="text" name="text" value="Поиск..." onfocus="if(this.value=='Поиск...') this.value='';" onblur="if(this.value=='') this.value='Поиск...';"/>
           {form_csrf()}
       </form>
       </div>
