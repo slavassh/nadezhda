@@ -5,17 +5,17 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <title>{$site_title}</title>
     <meta name="description" content="{$site_description}" />
-    <meta name="keywords" content="{$site_keywords}" />    
+    <meta name="keywords" content="{$site_keywords}" />
     <meta name="yandex-verification" content="7cf7c11102dcc0ea" />
     <meta name="google-site-verification" content="S1wzElIt6VIK3xaisQWcYMjbvSfTpS54n7-LKLtuUx4" />
     <meta name="msvalidate.01" content="6BDDEFCEBF6CA13D9952DA094D0AD262" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <link rel="stylesheet" type="text/css" href="{$THEME}/css/style.css" />
     <script type="text/javascript" src="{$THEME}/js/jquery.js"></script>
     <script type="text/javascript" src="{$THEME}/js/jquery.cycle.lite.js"></script>
     <script type="text/javascript" src="{$THEME}/js/jquery.functions.js"></script>
     <script type="text/javascript" src="{$THEME}/js/hoverIntent.js"></script>
     <script type="text/javascript" src="{$THEME}/js/superfish.js"></script>
+    <script src="{$THEME}/js/svg4everybody.min.js"></script>
     <link rel="icon" href="{$THEME}/images/favicon.png" type="image/x-icon" />
   </head>
   {if $page_type == 'main'}
@@ -55,7 +55,7 @@
         <a class="top-link detstran" href="http://children.chelnadezhda.edu.ru"></a>          
       </div>
     </div>
-    <div id="container">
+    <div id="container">      
       <div class="navigation">
         {load_menu('main_menu')}
       </div>
@@ -91,6 +91,7 @@
           <a class="featured-link last" href="/letocompany">Ищу маму и папу...</a>
         </div>
       <div id="main">    
+        <script>svg4everybody(); </script>
         <!-- BEGIN CONTENT -->
         {if $CI->uri->segment(1) != 'feedback' && $CI->uri->segment(1) != 'gallery'}
           <div class="main-content">{$content}</div>

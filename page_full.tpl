@@ -6,7 +6,7 @@
   {$page.prev_text}    
 </div>
 
-<div class="attachments">
+<div id="attachments" class="attachments">
   {if $page.field_file_01}
   <h6 class="attachments-title">Прикрепленные файлы</h6>
   {/if}

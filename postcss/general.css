@@ -578,6 +578,7 @@ ul {
 	padding-top: 0;
 	padding-left: 30px;
 	width: 930px;
+	margin-bottom: 50px;
 
 	ul {
 		margin: 0 0 5px 20px;
@@ -593,7 +594,7 @@ ul {
 	margin-top: 20px;
 	margin-bottom: 20px;
 	padding: 5px 0 0 30px;
-	background: url(../images/tContent.jpg) left center no-repeat;
+	background: svg-load('../images/star.svg', fill=$color-text-secondary) left center no-repeat;
 	color: $color-text-secondary;
 	font-weight: bold;
 	font-size: 19px;
@@ -926,4 +927,24 @@ a img {
 	&:hover {
 		background: $color_atlantis_approx;
 	}
+}
+
+.attachments-title {
+	background: svg-load('../images/star-outline.svg', fill=$color-text-secondary) transparent no-repeat 0 0;
+	padding: 0 0 0 28px;
+	color: $color-text-secondary;
+	background-size: 24px 24px;
+	font-size: 21px;
+	margin-bottom: .5em;
+}
+
+.file {
+	background: url('../images/download.png') transparent no-repeat 0 18px;
+	padding: 15px 0 15px 24px;
+	margin: 15px 4px;
+	display: block;
+	color: $color-text-secondary;
+	font-size: 19px;	
+	border-top: 1px dotted $color_alto_approx;
+	padding-bottom: 1px;
 }

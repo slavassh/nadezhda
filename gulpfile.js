@@ -4,6 +4,9 @@ var gulp            = require('gulp');
 var plumber         = require("gulp-plumber");
 var postcss         = require("gulp-postcss");
 var precss          = require("precss");
+var inlinesvg       = require("postcss-inline-svg");
+var inlinesvgopt    = require('postcss-svgo');
+var svgFallback     = require('postcss-svg-fallback')
 var sourcemaps      = require('gulp-sourcemaps');
 var browserSync     = require("browser-sync");
 var autoprefixer    = require("autoprefixer");
@@ -30,6 +33,8 @@ gulp.task('style', function() {
       .pipe(sourcemaps.init())
       .pipe(postcss([
         precss(),
+        inlinesvg(),
+        inlinesvgopt(),
         mqpacker({
           sort: true
         }),
