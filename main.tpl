@@ -201,16 +201,16 @@
       </div>
       {/if}
       <div class="footer-banners">
-        <a class="footer-banner" href="http://минобрнауки.рф"><img src="{$THEME}/images/minobrrf.png" /></a>
-        <a class="footer-banner" href="http://www.minobr74.ru"><img src="{$THEME}/images/minobr.png" /></a>
-        <a class="footer-banner" href="http://minsoc74.ru"><img src="{$THEME}/images/minsocial.png" /></a>
-        <a class="footer-banner" href="http://socchel.ru"><img src="{$THEME}/images/uprpodelamobr.png" /></a>
-        <a class="footer-banner" href="http://usznsov.ru"><img src="{$THEME}/images/uprobr.png" /></a>        
-        <a class="footer-banner" href="http://www.edu.ru"><img src="{$THEME}/images/edu.png" /></a>
-        <a class="footer-banner" href="http://window.edu.ru"><img src="{$THEME}/images/edinoeokno.png" /></a>
-        <a class="footer-banner" href="http://school-collection.edu.ru"><img src="{$THEME}/images/edinkollekcia.png" /></a>
-        <a class="footer-banner" href="http://fcior.edu.ru"><img src="{$THEME}/images/fedcentrobrresurs.png" /></a>
-        <a class="footer-banner" href="http://ipk74.ru"><img src="{$THEME}/images/chipkro.png" /></a>
+        <a class="footer-banner" href="http://минобрнауки.рф"><img src="{$THEME}/images/banners/minobrrf.png" /></a>
+        <a class="footer-banner" href="http://www.minobr74.ru"><img src="{$THEME}/images/banners/minobr.png" /></a>
+        <a class="footer-banner" href="http://minsoc74.ru"><img src="{$THEME}/images/banners/minsocial.png" /></a>
+        <a class="footer-banner" href="http://socchel.ru"><img src="{$THEME}/images/banners/comsocial.png" /></a>
+        <a class="footer-banner" href="http://usznsov.ru"><img src="{$THEME}/images/banners/sovsocial.png" /></a>        
+        <a class="footer-banner" href="http://www.edu.ru"><img src="{$THEME}/images/banners/edu.png" /></a>
+        <a class="footer-banner" href="http://window.edu.ru"><img src="{$THEME}/images/banners/edinoeokno.png" /></a>
+        <a class="footer-banner" href="http://school-collection.edu.ru"><img src="{$THEME}/images/banners/edinkollekcia.png" /></a>
+        <a class="footer-banner" href="http://fcior.edu.ru"><img src="{$THEME}/images/banners/fedcentrobrresurs.png" /></a>
+        <a class="footer-banner" href="http://ipk74.ru"><img src="{$THEME}/images/banners/chipkro.png" /></a>
       </div>
 
     <!-- BEGIN FOOTER -->
