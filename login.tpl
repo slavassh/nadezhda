@@ -1,4 +1,4 @@
-﻿<div style="border-top-left-radius:9px; border-bottom-left-radius:0px;" class="titleExt"><h5>{widget('path')}<span class="ext">{lang('lang_login_page')}</span></h5></div>
+﻿<div class="titleExt"><h5>{widget('path')}<span class="ext">{lang('lang_login_page')}</span></h5></div>
 
 {if validation_errors() OR $info_message}
     <div class="errors"> 
@@ -44,10 +44,10 @@
 	
     <br /><br />
 
-    <label class="left">&nbsp;</label> 
+    <!--<label class="left">&nbsp;</label> 
     <a style="color:#666666; border-bottom:1px dotted #666666; text-decoration:none" href="{site_url($modules.auth . '/forgot_password')}">{lang('lang_forgot_password')}</a>
     &nbsp;
-    <a style="color:#666666; border-bottom:1px dotted #666666; text-decoration:none" href="{site_url($modules.auth . '/register')}">{lang('lang_register')}</a>
+    <a style="color:#666666; border-bottom:1px dotted #666666; text-decoration:none" href="{site_url($modules.auth . '/register')}">{lang('lang_register')}</a>-->
 
 {form_csrf()}
 </form>

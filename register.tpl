@@ -1,4 +1,4 @@
-﻿<div style="border-top-left-radius:9px; border-bottom-left-radius:0px;" class="titleExt"><h5>{widget('path')}<span class="ext">{lang('lang_register')}</span></h5></div>
+﻿<div class="titleExt"><h5>{widget('path')}<span class="ext">{lang('lang_register')}</span></h5></div>
 
 {if validation_errors() OR $info_message}
     <div class="errors"> 
@@ -7,7 +7,7 @@
     </div>
 {/if}
 
-<form style="margin-left:10px;" action="" class="form" method="post">
+<!--<form style="margin-left:10px;" action="" class="form" method="post">
 
 	<div class="comment_form_info">
 	
@@ -57,6 +57,4 @@
     <a style="color:#666666; border-bottom:1px dotted #666666; text-decoration:none" href="{site_url('auth/login')}">Вход</a>
 
 {form_csrf()}
-</form>
-<br>
-<br>
+</form>-->
