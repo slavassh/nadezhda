@@ -48,9 +48,9 @@
       </div>
       <a id="logo" href="/"></a>
       <div class="top-links">
-        <a class="top-link interpriem" href="/feedback"></a>          
-        <a class="top-link news" href="/news"></a>
-        <a class="top-link detstran" href="http://children.chelnadezhda.edu.ru"></a>          
+        <a class="top-links__item top-links__item--question" href="/feedback" data-title="Интернет-приёмная"></a>          
+        <a class="top-links__item top-links__item--sign" href="/news" data-title="Обращения граждан"></a>
+        <a class="top-links__item top-links__item--sparkles" href="http://children.chelnadezhda.edu.ru" data-title="Приём граждан"></a>          
       </div>
     </div>
     <div id="container">      
@@ -83,20 +83,28 @@
         </div>
         <!-- END SLIDESHOW -->
         {/if}
-        <div class="featured-links">
-          <a class="featured-link first" href="/dni-otkrytyh-dverei">Дни открытых дверей</a>
-          <a class="featured-link center" href="/vam-usynoviteli">Вам, усыновители...</a>
-          <a class="featured-link last" href="http://www.usynovite.ru/db">Ищу маму и папу...</a>
+        <div class="featured">
+          <div class="featured__links">
+            <a class="featured__top-link" href="">Профилактика социального сиротства</a>
+            <a class="featured__top-link" href="">Социально-педагогическая деятельность</a>
+            <a class="featured__top-link" href="">Школа приемного родителя</a>
+            <a class="featured__top-link" href="">Сопровождение замещающих семей</a>
+          </div>
+          <div class="featured__links">
+            <a class="featured__link featured__link--first" href="/dni-otkrytyh-dverei">Дни открытых дверей</a>
+            <a class="featured__link featured__link--center" href="/vam-usynoviteli">Вам, усыновители...</a>
+            <a class="featured__link featured__link--last" href="http://www.usynovite.ru/db">Ищу маму и папу...</a>
+          </div>
         </div>
-      <div id="main">
-        <!-- BEGIN CONTENT -->
-        {if $CI->uri->segment(1) != 'feedback' && $CI->uri->segment(1) != 'gallery'}
-          <div class="main-content">{$content}</div>
-        {else:}
-          <div id="no_sidebar_content">{$content}</div>
-        {/if}
+        <div id="main">
+          <!-- BEGIN CONTENT -->
+          {if $CI->uri->segment(1) != 'feedback' && $CI->uri->segment(1) != 'gallery'}
+            <div class="main-content">{$content}</div>
+          {else:}
+            <div id="no_sidebar_content">{$content}</div>
+          {/if}
 
-      </div>
+        </div>
         <!-- END CONTENT -->
         
         
