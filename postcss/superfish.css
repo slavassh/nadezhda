@@ -3,6 +3,7 @@ ul.sf-menu {
 	margin: 0;
 	padding: 0;	
 	list-style: none;
+	width: 100%;
 
 	li {
 		position: relative;
@@ -143,11 +144,11 @@ ul.sf-menu {
 .menu-item {
 	@mixin menu_color $red, 1;
 	@mixin menu_color $blaze_orange, 2;
-	@mixin menu_color $yellow, 3;
-	@mixin menu_color $green, 4;
-	@mixin menu_color $cyan, 5;
-	@mixin menu_color $blue, 6;
-	@mixin menu_color $pink, 7;
+	/* @mixin menu_color $yellow, 3; */
+	@mixin menu_color $green, 3;
+	@mixin menu_color $cyan, 4;
+	@mixin menu_color $blue, 5;
+	@mixin menu_color $pink, 6;
 	&.last {
 		border-top-right-radius: 13px;
 	}

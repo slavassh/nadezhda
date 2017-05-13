@@ -84,7 +84,7 @@
         <!-- END SLIDESHOW -->
         {/if}
         <div class="featured">
-          <div class="featured__links">
+          <div class="featured__links featured__links--top">
             <a class="featured__top-link" href="">Профилактика социального сиротства</a>
             <a class="featured__top-link" href="">Социально-педагогическая деятельность</a>
             <a class="featured__top-link" href="">Школа приемного родителя</a>
@@ -93,7 +93,7 @@
           <div class="featured__links">
             <a class="featured__link featured__link--first" href="/dni-otkrytyh-dverei">Дни открытых дверей</a>
             <a class="featured__link featured__link--center" href="/vam-usynoviteli">Вам, усыновители...</a>
-            <a class="featured__link featured__link--last" href="http://www.usynovite.ru/db">Ищу маму и папу...</a>
+            <a class="featured__link featured__link--last" href="http://www.usynovite.ru/db/">Ищу маму и папу...</a>
           </div>
         </div>
         <div id="main">

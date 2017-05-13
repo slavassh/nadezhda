@@ -429,13 +429,13 @@ ul {
 }
 
 .featured {
-  background: url(../images/centerfon.png) no-repeat;
+  background: url(../images/centerfon.png) repeat-y;
   box-shadow: 0 0 7px $ black_50;
   border-bottom-right-radius: 7px;
   border-bottom-left-radius: 7px;
   margin: 0 auto 15px;
   box-sizing: border-box;
-  padding: 20px 20px 15px;
+  padding: 10px 20px 15px;
   width: 980px;
 }
 
@@ -443,6 +443,30 @@ ul {
   display: table;
   box-sizing: border-box;
   width: 100%;
+
+  &--top {
+    display: flex;
+    width: auto;
+    justify-content: space-around;
+    a {
+      &:nth-of-type(4n+1) {        
+        background: url(../images/bird-standing-original.png) no-repeat;
+      }
+
+      &:nth-of-type(4n+2) {
+        background: url(../images/bird-standing-green.png) no-repeat;
+      }
+
+      &:nth-of-type(4n+3) {
+        background: url(../images/bird-standing-purple.png) no-repeat;        
+      }
+
+      &:nth-of-type(4n) {
+        background: url(../images/bird-standing-orange.png) no-repeat;
+        width: 26%;
+      }
+    }
+  }
 }
 
 .featured__link {
@@ -480,16 +504,15 @@ ul {
   }
 }
 
-.featured__top-link {
-  display: table-cell;
+a.featured__top-link {  
   box-sizing: border-box;
-  margin: 15px;
-  padding: 20px 10px 10px 35px;
-  width: 25%;
+  margin: 0px;
+  padding: 12px 10px 10px 50px;
+  
   height: 60px;
   color: $color-text-primary !important;
   font-size: 16px;
-  font-weight: bold;
+  
   transition: opacity .3s;
 
   &:link {
@@ -502,18 +525,7 @@ ul {
     transition: opacity .3s;
   }
 
-  &--last {
-    padding-left: 170px;
-    background: url(../images/featured-family.png) no-repeat;
-  }
 
-  &--center {
-    background: url(../images/featured-son.png) no-repeat;
-  }
-
-  &--first {
-    background: url(../images/featured-star.png) no-repeat;
-  }
 }
 
 .picture-front {
@@ -1035,4 +1047,18 @@ a img {
   font-size: 19px;
   border-top: 1px dotted $color_alto_approx;
   padding-bottom: 1px;
+}
+
+.category__link {
+  background: svg-load('../images/bird-silhouette.svg', fill=$color-text-secondary) transparent no-repeat 0 0;
+  padding: 0 0 0 30px;
+  color: $color-text-secondary;
+  background-size: 24px 24px;
+  font-size: 22px;
+  margin-bottom: 10px !important;  
+  list-style: none;
+
+  a {
+    text-decoration: none !important;
+  }
 }
