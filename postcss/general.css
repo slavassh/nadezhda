@@ -1062,3 +1062,7 @@ a img {
     text-decoration: none !important;
   }
 }
+
+.category__title {
+  text-decoration: none;
+}

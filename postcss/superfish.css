@@ -10,7 +10,7 @@ ul.sf-menu {
 		display: table-cell;
 		text-transform: uppercase;			
 		white-space: normal;
-		transition: background .2s;
+		transition: background .2s;		
 
 		&:hover {			
 			transition: none;
@@ -31,8 +31,7 @@ ul.sf-menu {
 
 		a {
 			display: block;
-			box-sizing: border-box;
-			min-height: 66px;
+			box-sizing: border-box;			
 			color: $white;
 			text-decoration: none;
 			

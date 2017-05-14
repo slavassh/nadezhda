@@ -49,8 +49,8 @@
       <a id="logo" href="/"></a>
       <div class="top-links">
         <a class="top-links__item top-links__item--question" href="/feedback" data-title="Интернет-приёмная"></a>          
-        <a class="top-links__item top-links__item--sign" href="/news" data-title="Обращения граждан"></a>
-        <a class="top-links__item top-links__item--sparkles" href="http://children.chelnadezhda.edu.ru" data-title="Приём граждан"></a>          
+        <a class="top-links__item top-links__item--sign" href="/appeals" data-title="Обращения граждан"></a>
+        <a class="top-links__item top-links__item--sparkles" href="/reception" data-title="Приём граждан"></a>          
       </div>
     </div>
     <div id="container">      
@@ -85,10 +85,10 @@
         {/if}
         <div class="featured">
           <div class="featured__links featured__links--top">
-            <a class="featured__top-link" href="">Профилактика социального сиротства</a>
-            <a class="featured__top-link" href="">Социально-педагогическая деятельность</a>
-            <a class="featured__top-link" href="">Школа приемного родителя</a>
-            <a class="featured__top-link" href="">Сопровождение замещающих семей</a>
+            <a class="featured__top-link" href="/profilaktika-sotsialnogo-sirotstva">Профилактика социального сиротства</a>
+            <a class="featured__top-link" href="/sotsialno-pedagogicheskaia-deiatelnost">Социально-педагогическая деятельность</a>
+            <a class="featured__top-link" href="/shkola-priemnogo-roditelia">Школа приемного родителя</a>
+            <a class="featured__top-link" href="/soprovozhdenie-zameshchaiushchih-semei">Сопровождение замещающих семей</a>
           </div>
           <div class="featured__links">
             <a class="featured__link featured__link--first" href="/dni-otkrytyh-dverei">Дни открытых дверей</a>
